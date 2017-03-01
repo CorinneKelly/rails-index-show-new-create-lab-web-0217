@@ -38,7 +38,6 @@ describe 'form page' do
 
     fill_in 'coupon_code', with: "FREEITEM"
     fill_in 'store', with: "Quip"
-
     click_on "Submit Coupon"
 
     expect(Coupon.last.store).to eq("Quip")

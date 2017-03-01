@@ -1,0 +1,13 @@
+<%= form_tag new_coupon_path do %>
+
+	<label>Coupon Form</label><br>
+
+	Coupon Code: <%= text_field_tag :'coupon_code' %><br>
+
+	Store: <%= text_field_tag :'store' %><br>
+
+	<%= params.inspect %>
+
+	<%= submit_tag value="Submit Coupon" %>
+
+<% end %>
